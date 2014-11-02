@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#808080"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivityManual" >
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="0"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btDimmer3"
+        android:layout_alignParentBottom="true"
+        android:enabled="true"
+        android:text="Baca Data" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btRead"
+        android:layout_alignLeft="@+id/btDimmer2"
+        android:editable="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et2"
+        android:layout_alignLeft="@+id/et2"
+        android:text="Baca Data Sensor :"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btDimmer3"
+        android:layout_alignLeft="@+id/btDimmer3"
+        android:text="Lampu Spot Dimmer C :"
+        android:textColor="#FFF" />
+
+    <SeekBar
+        android:id="@+id/btDimmer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView1"
+        android:layout_alignLeft="@+id/TextView1"
+        android:layout_marginBottom="16dp"
+        android:enabled="true"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/valuePWM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignLeft="@+id/valuePWM3"
+        android:layout_alignRight="@+id/btDimmer2"
+        android:text="PWM Value : "
+        android:textColor="#FFF" />
+
+    <SeekBar
+        android:id="@+id/btDimmer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView03"
+        android:layout_alignLeft="@+id/btDimmer2"
+        android:layout_marginBottom="16dp"
+        android:enabled="true"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/btDimmer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/Button07"
+        android:layout_marginBottom="16dp"
+        android:enabled="true"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btDimmer2"
+        android:layout_alignLeft="@+id/btDimmer2"
+        android:text="Lampu Spot Dimmer B :"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btDimmer1"
+        android:layout_alignLeft="@+id/btDimmer1"
+        android:text="Lampu Spot Dimmer A :"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btRead"
+        android:layout_alignBottom="@+id/btRead"
+        android:layout_toRightOf="@+id/btRead"
+        android:enabled="true"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/valuePWM1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btDimmer1"
+        android:layout_alignLeft="@+id/valuePWM2"
+        android:layout_alignRight="@+id/btDimmer1"
+        android:text="PWM Value : "
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btAutoManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et3"
+        android:layout_alignBottom="@+id/et3"
+        android:layout_alignRight="@+id/btDimmer1"
+        android:enabled="true"
+        android:text="Manual Mode" />
+
+    <TextView
+        android:id="@+id/valuePWM3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btDimmer3"
+        android:layout_alignLeft="@+id/btAutoManual"
+        android:layout_alignRight="@+id/btDimmer3"
+        android:text="PWM Value : "
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/LampuSpotC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/valuePWM1"
+        android:layout_alignRight="@+id/LampuSpotB"
+        android:layout_alignTop="@+id/Lampu2C"
+        android:enabled="true"
+        android:text="LampSpotC OFF" />
+
+    <Button
+        android:id="@+id/LampuSpotB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Lampu2B"
+        android:layout_alignLeft="@+id/valuePWM1"
+        android:layout_alignRight="@+id/btDimmer1"
+        android:enabled="true"
+        android:text="LampSpotB OFF" />
+
+    <Button
+        android:id="@+id/LampuSpotA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LampuSpotB"
+        android:layout_alignLeft="@+id/LampuSpotB"
+        android:enabled="true"
+        android:text="LampSpotA OFF" />
+
+    <Button
+        android:id="@+id/Lampu1C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView04"
+        android:layout_alignRight="@+id/Lampu1A"
+        android:enabled="true"
+        android:text="Lampu1 C OFF" />
+
+    <Button
+        android:id="@+id/Lampu1B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Lampu1C"
+        android:layout_alignRight="@+id/textView2"
+        android:enabled="true"
+        android:text="Lampu1 B OFF" />
+
+    <Button
+        android:id="@+id/Lampu1A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Lampu1B"
+        android:layout_alignLeft="@+id/Lampu1B"
+        android:layout_alignRight="@+id/textView2"
+        android:enabled="true"
+        android:text="Lampu1 A OFF" />
+
+    <Button
+        android:id="@+id/Lampu2A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LampuSpotB"
+        android:layout_alignLeft="@+id/Lampu2B"
+        android:layout_alignRight="@+id/Lampu2B"
+        android:enabled="true"
+        android:text="Lampu2 A OFF" />
+
+    <Button
+        android:id="@+id/Lampu2C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Lampu1C"
+        android:layout_alignLeft="@+id/Lampu2B"
+        android:layout_alignRight="@+id/Lampu2B"
+        android:enabled="true"
+        android:text="Lampu2 C OFF" />
+
+    <Button
+        android:id="@+id/Lampu2B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Lampu1B"
+        android:layout_toLeftOf="@+id/LampuSpotB"
+        android:layout_toRightOf="@+id/TextView1"
+        android:enabled="true"
+        android:text="Lampu2 B OFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Lampu1A"
+        android:layout_alignLeft="@+id/TextView04"
+        android:text="ON/OFF Switch :"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

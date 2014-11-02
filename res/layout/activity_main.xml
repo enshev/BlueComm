@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btConnect"
+        android:layout_toLeftOf="@+id/et1"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btSendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et1"
+        android:layout_alignBottom="@+id/et1"
+        android:layout_alignRight="@+id/btAutoManual"
+        android:enabled="false"
+        android:text="Kirim Text" />
+
+    <TextView
+        android:id="@+id/valuePWM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/btAutoManual"
+        android:layout_alignRight="@+id/btLamSpot"
+        android:text="PWM Value : "
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:enabled="false"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/btRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btClear"
+        android:layout_alignBottom="@+id/btClear"
+        android:layout_toLeftOf="@+id/btClear"
+        android:enabled="false"
+        android:text="Baca Data" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btClear"
+        android:layout_alignLeft="@+id/btLam1"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et2"
+        android:layout_alignLeft="@+id/et2"
+        android:text="Baca Data Sensor :"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btTrainingRSSI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btRead"
+        android:layout_alignBottom="@+id/btRead"
+        android:layout_alignLeft="@+id/btDimmer"
+        android:enabled="true"
+        android:text="Training Data RSSI" />
+
+    <Button
+        android:id="@+id/btScan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btModel"
+        android:layout_alignBottom="@+id/btModel"
+        android:layout_toLeftOf="@+id/btRead"
+        android:text="Scan" />
+
+    <Button
+        android:id="@+id/btConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btLam2"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/btAutoManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btClear"
+        android:enabled="false"
+        android:text="Manual Mode" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/btConnect"
+        android:layout_toLeftOf="@+id/btSendText"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et1"
+        android:layout_below="@+id/btSendText"
+        android:text="ON/OFF Switch :"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btLam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:enabled="false"
+        android:text="Lampu1 OFF" />
+
+    <Button
+        android:id="@+id/btLam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btLam1"
+        android:layout_alignBottom="@+id/btLam1"
+        android:layout_toRightOf="@+id/btLam1"
+        android:enabled="false"
+        android:text="Lampu2 OFF" />
+
+    <Button
+        android:id="@+id/btLamSpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/btSendText"
+        android:enabled="false"
+        android:text="LampSpot OFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btDimmer"
+        android:layout_below="@+id/btLam1"
+        android:text="Lampu Spot Dimmer :"
+        android:textColor="#FFF" />
+
+    <SeekBar
+        android:id="@+id/btDimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/valuePWM"
+        android:layout_below="@+id/valuePWM"
+        android:enabled="false"
+        android:max="255" />
+
+    <Button
+        android:id="@+id/btModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btDimmer"
+        android:layout_centerVertical="true"
+        android:enabled="false"
+        android:text="Model" />
+
+    <Button
+        android:id="@+id/btNoRSSI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btScan1"
+        android:layout_alignBottom="@+id/btScan1"
+        android:layout_toRightOf="@+id/et1"
+        android:enabled="false"
+        android:text="No RSSI" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView1"
+        android:layout_alignLeft="@+id/btModel"
+        android:layout_below="@+id/btScan1"
+        android:ems="10" />
+
+</RelativeLayout>
