@@ -17,7 +17,7 @@ if you are using another type arduino device you have to adjust the output and i
 
 ### Usage
 This project uses the ADT Eclipse IDE, import the zip folder into your IDE.
-Scratch for arduino you can compile with the Arduino IDE (adjust pin with arduino type you use).
+Scratch for arduino you can compile [bluecomm.ino](https://github.com/enshev/BlueComm/blob/master/bluecomm.ino) with the Arduino IDE (adjust pin with arduino type you use).
 
 ### Command Format
 Send from Apps = (*, X, Pin, Value)
@@ -30,7 +30,9 @@ Send from Apps = (*, X, Pin, Value)
 - Read data from arduino
 
 ### Link
--[Arduino Mega 2560] (http://arduino.cc/en/Main/arduinoBoardMega2560)
--[Bluetooth HC-05 (http://www.exp-tech.de/service/datasheet/HC-Serial-Bluetooth-Products.pdf)
--[Eclipse ADT] (http://developer.android.com/sdk/index.html)
--[Arduino IDE] (http://arduino.cc/en/main/software)
+-[Arduino Mega 2560](http://arduino.cc/en/Main/arduinoBoardMega2560)
+-[Bluetooth HC-05(http://www.exp-tech.de/service/datasheet/HC-Serial-Bluetooth-Products.pdf)
+-[Eclipse ADT](http://developer.android.com/sdk/index.html)
+-[Arduino IDE](http://arduino.cc/en/main/software)
+
+created by enshev
