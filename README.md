@@ -34,5 +34,3 @@ Send from Apps = (*, X, Pin, Value)
 -[Bluetooth HC-05(http://www.exp-tech.de/service/datasheet/HC-Serial-Bluetooth-Products.pdf)
 -[Eclipse ADT](http://developer.android.com/sdk/index.html)
 -[Arduino IDE](http://arduino.cc/en/main/software)
-
-created by enshev
